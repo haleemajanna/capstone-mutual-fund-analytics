@@ -104,3 +104,4 @@ ORDER BY fact_performance.sharpe_ratio DESC
 LIMIT 5;
 """
 run_query(q10, "Query 10: Top 5 Funds by Sharpe Ratio (Risk-Adjusted Return)")
+

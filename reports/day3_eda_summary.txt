@@ -1,0 +1,42 @@
+DAY 3 — EXPLORATORY DATA ANALYSIS (EDA) SUMMARY
+Bluestock Mutual Fund Analytics Capstone Project
+==================================================
+
+DELIVERABLE: Notebooks/EDA_Analysis.ipynb
+
+CHARTS CREATED (10 tasks, 10 PNG exports):
+1. NAV Trend Analysis (Plotly) — all 40 schemes, 2022-2026, with 2023 bull run
+   and 2024 correction highlighted. -> 01_nav_trend.png
+2. AUM Growth by Fund House (Seaborn) — grouped bar, 2022-2025, SBI dominance
+   highlighted at ~Rs 12.5L Cr. -> 02_aum_growth.png
+3. SIP Inflow Time-Series (Plotly) — monthly trend Jan 2022-Dec 2025, annotated
+   all-time high of Rs 31,002 Cr in Dec 2025. -> 03_sip_inflow_trend.png
+4. Category Inflow Heatmap (Seaborn) — months x categories, net inflow as color
+   intensity, plus a supplementary per-category normalized version.
+   -> 04_category_inflow_heatmap.png, 04b_category_inflow_heatmap_normalized.png
+5. Investor Demographics — age group pie, SIP amount box plot by age group,
+   gender split (3-panel figure). -> 05_investor_demographics.png
+6. Geographic Distribution — horizontal bar of SIP amount by state, T30 vs B30
+   city tier pie chart. -> 06_geographic_distribution.png
+7. Folio Count Growth (Plotly) — line chart from 13.26 Cr (Jan 2022) to
+   26.12 Cr (Dec 2025), with milestone annotations. -> 07_folio_growth.png
+8. NAV Return Correlation Matrix (Seaborn) — pairwise daily-return correlation
+   across 10 selected schemes. -> 08_correlation_matrix.png
+9. Sector Allocation Donut — aggregated sector weights across equity-category
+   funds from portfolio_holdings. -> 09_sector_allocation_donut.png
+10. Ten key insights documented as Markdown cells throughout the notebook,
+    each referencing its supporting chart.
+
+DATA NOTES / ISSUES ENCOUNTERED:
+- Day 2 cleaning renamed 4 processed files (dropped numeric prefix, added
+  "_clean" suffix): nav_history_clean.csv, monthly_sip_inflows_clean.csv,
+  scheme_performance_clean.csv, investor_transactions_clean.csv.
+- NAV return correlations across selected funds are unusually weak (mostly
+  -0.09 to +0.05), lower than expected for real-world same-segment funds -
+  flagged as a likely artifact of simulated/independent NAV generation in
+  the underlying dataset, not a calculation error.
+- Plotly PNG export (kaleido) fails if a raw pandas Timestamp is passed into
+  add_annotation(); fixed by converting to string via str(x.date()) before
+  passing to annotations.
+
+TOOLS: pandas, plotly (express + graph_objects), seaborn, matplotlib, kaleido
