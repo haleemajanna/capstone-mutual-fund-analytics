@@ -1,7 +1,7 @@
 DAY 1 - DATA QUALITY SUMMARY
 ========================================
 
-Total datasets loaded: 10
+Total datasets loaded: 16
 Total funds in fund_master: 40
 Total funds with NAV history: 40
 Funds missing NAV history: 0
