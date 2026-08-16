@@ -18,8 +18,9 @@
 | 6 | Dashboard Development (Power BI) | ✅ | `Dashboard/bluestock_mf_dashboard.pbix` — 4 pages + drill-through, slicers, DAX |
 | 7 | Final Report + Presentation + Deployment | ✅ | `reports/Final_Report.pdf` (17 pp.), `Bluestock_MF_Presentation.pptx` (12 slides), GitHub `v1.0` tag |
 | 8 | Documentation | ✅ | `README.md`, `SQL/data_dictionary.md`, docstrings across all scripts |
+| 9 | Advanced Analytics + Risk Metrics (VaR/CVaR, rolling Sharpe, cohorts, SIP continuity, recommender, HHI) | ✅ | `Notebooks/Advanced_Analytics.ipynb`, `Scripts/recommender.py`, `reports/var_cvar_report.csv`, `reports/charts/rolling_sharpe_chart.png` |
 
-**Result: 8/8 objectives met.**
+**Result: 9/9 objectives met.**
 
 ---
 
@@ -34,8 +35,9 @@
 | Master pipeline script (run_pipeline.py) | ✅ | `Scripts/run_pipeline.py` |
 | Power BI dashboard (.pbix) | ✅ | `Dashboard/bluestock_mf_dashboard.pbix` |
 | Google Drive submission folder | ✅ | `HaleemaJanna_MutualFundAnalytics` (mid-capstone; final assets to be added) |
+| Advanced_Analytics.ipynb + risk metrics outputs | ✅ | `Notebooks/`, `Scripts/recommender.py`, `reports/var_cvar_report.csv`, `reports/charts/rolling_sharpe_chart.png` |
 
-**Result: 7/7 deliverables present.**
+**Result: 8/8 deliverables present.**
 
 ---
 
